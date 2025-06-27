@@ -1,0 +1,52 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+form input, form select {
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+
+.Low {
+  background: #d4edda;
+}
+
+.Medium {
+  background: #fff3cd;
+}
+
+.High {
+  background: #f8d7da;
+}
+
+a {
+  float: right;
+  text-decoration: none;
+  color: red;
+}

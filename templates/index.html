@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>TODO List</h1>
+    <form method="POST" action="/add">
+      <input type="text" name="title" placeholder="New Task" required>
+      <select name="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul>
+      {% for task in tasks %}
+        <li class="{{ task[2] }}">{{ task[1] }}
+          <a href="/delete/{{ task[0] }}">❌</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>
